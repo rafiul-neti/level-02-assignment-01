@@ -12,3 +12,12 @@ const reverseString = (str: string): string => {
 
 // Solution 03
 
+type StringOrNumber = string | number;
+
+const checkType = (input: StringOrNumber): StringOrNumber => {
+  if (typeof input === "number") {
+    return "Number";
+  } else {
+    return "String";
+  }
+};
