@@ -11,7 +11,6 @@ const reverseString = (str: string): string => {
 };
 
 // Solution 03
-
 type StringOrNumber = string | number;
 
 const checkType = (input: StringOrNumber): StringOrNumber => {
@@ -21,3 +20,9 @@ const checkType = (input: StringOrNumber): StringOrNumber => {
     return "String";
   }
 };
+
+// Solution 04
+const getProperty = <X>(obj: X, key: keyof X) => {
+  return obj[key];
+};
+
